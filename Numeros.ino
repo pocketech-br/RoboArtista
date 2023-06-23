@@ -1,4 +1,4 @@
-// Instructions to generate the numbers 0-9
+// Instrução para gerar números de 0-9
 
 void N0()
 {
