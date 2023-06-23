@@ -9,7 +9,7 @@ void Espaco()
 {
   Pausar();                                          // garantir que os motores estão parados
   delay(100);                                      // delay para permitir que a tensão da bateria estabilize-se
-  tensao = analogRead(bateria) / 10;                // receber novo valor de tensão para manter velocidade take new battery reading to maintain optimal speed
+  tensao = analogRead(bateria) / 10;                // receber novo valor de tensão para manter velocidade faça uma nova leitura da bateria para manter a velocidade ideal
   velocDesenho = 26214 / tensao * 10 / tensao;             // correção na velocidade de desenho (fator=100% é quando a bateria estiver com 5V ou para leitura analógica recebendo 512)
   velocDesenho = velocDesenho * 8 / 10;                        // ajuste na velocidade para previnir overshoot
   Cima(); Avante(4);                                     // levantar o chassi e ir 4 espaços para frente
